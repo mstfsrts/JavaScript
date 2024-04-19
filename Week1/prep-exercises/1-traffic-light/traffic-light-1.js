@@ -29,3 +29,18 @@ The traffic light is on orange
 The traffic light is on red
 
 */
+
+  // We use a switch statement to handle different states of the traffic light
+  switch (currentState) {
+    case "green":
+      trafficLight.state = "orange";
+      break;
+    case "orange":
+      trafficLight.state = "red";
+      break;
+    case "red":
+      rotations++;
+      trafficLight.state = "green";
+      break;
+  }
+}
