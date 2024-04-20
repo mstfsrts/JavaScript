@@ -18,6 +18,17 @@ while (cycle < 2) {
   // if the color is green, turn it orange
   // if the color is orange, turn it red
   // if the color is red, add 1 to cycles and turn it green
+
+  if (currentState === "green") {
+    trafficLight.stateIndex = 1; // Turn it on orange
+  }
+  else if (currentState === "orange") {
+    trafficLight.stateIndex === 2; // Turn it on red
+  }
+  else if (currentState === "red") {
+    trafficLight.stateIndex = 0; // Turn it on green
+    cycle++;
+  }
 }
 
 /**
